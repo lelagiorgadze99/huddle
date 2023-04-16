@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* font-family: 'Poppins', sans-serif; */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background:url(/assets/bg-mobile.svg) no-repeat, #684BB1;
+}
+
+.main-img{
+    max-width: 100%;
+}
+.logo{
+    max-width: 7.5rem;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2.5rem;
+}
+header{
+    padding-top: 2.5rem;
+    padding-left: 2.5rem;
+    padding-bottom: 4.3rem;
+}
+.text-div{
+    padding-top: 3.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+p{
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: white;
+}
+
+h1{
+    font-size: 1.5rem;
+    color: white;
+}
+button{
+    background-color: white;
+    color: #684BB1;
+    font-size: 0.75em;
+    line-height: 1.125;
+    font-weight: 400;
+    border: none;
+    padding: 0.7em 4.6em;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+footer{
+    padding-top: 4rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.68rem;
+}
+.social-icons > img {
+    width: 27px;
+    height: 28px;
+    color: white;
+    filter: invert(95%) sepia(97%) saturate(14%) hue-rotate(213deg) brightness(104%) contrast(104%);
+}
+
+/* desktop version */
+@media (min-width: 1300px){
+    body{
+        background: url(/assets/bg-desktop.svg), #684BB1;
+    }
+    main{
+        flex-direction: row;
+        gap: 3.75rem;
+        
+    }
+.text-div{
+    display: flex;
+    flex-direction: column;
+   align-items: flex-start;
+    gap: 1.5rem;
+    padding-top: 0;
+}
+h1{
+    font-size: 2.5rem;
+}
+p{
+    font-size: 1.125rem;
+}
+.logo{
+    max-width: 100%;
+}
+footer{
+    justify-content:flex-end;
+    padding: 2.5rem;
+    gap: 1rem;
+}
+.social-icons > img {
+    width: 40px;
+    height: 40px;
+}
+button{
+    font-size: 1.12em;
+    padding: 1rem 4rem;
+}
+button :hover{
+    color: #E880E8;
+}
+
+}
